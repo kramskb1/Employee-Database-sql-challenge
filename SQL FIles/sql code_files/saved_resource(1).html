@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta) -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- To set pgAdmin4 shortcut icon in browser -->
+    <link rel="shortcut icon" href="http://127.0.0.1:63286/favicon.ico?ver=42400">
+
+    <!-- Base template stylesheets -->
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.css">
+
+     <!--View specified stylesheets-->
+    <link type="text/css" rel="stylesheet" href="./browser.css">
+
+    <script>
+        /* This is used to change publicPath of webpack at runtime */
+        window.getChunkURL = function() {
+            return "/static/js/generated/";
+        };
+    </script>
+    <!-- Base template scripts -->
+    <script type="text/javascript" src="./require.min.js.download"></script>
+    <script type="text/javascript">
+            require.config({
+                baseUrl: '',
+                urlArgs: 'ver=42400',
+                waitSeconds: 0,
+                shim: {},
+                paths: {
+                    sources: "/static/js",
+                    datagrid: "/static/js/generated/datagrid",
+                    sqleditor: "/static/js/generated/sqleditor",
+                    'pgadmin.browser.utils': "/browser/" + "js/utils",
+                    'pgadmin.browser.endpoints': "/browser/" + "js/endpoints",
+                    'pgadmin.browser.messages': "/browser/" + "js/messages",
+                    'pgadmin.server.supported_servers': "/browser/" + "server/supported_servers",
+                    'pgadmin.user_management.current_user': "/user_management/" + "current_user",
+                    'translations': "/tools/" + "translations"
+                }
+            });
+
+    </script>
+
+    <!-- View specified scripts -->
+    <script type="text/javascript" src="./vendor.main.js.download"></script>
+    <script type="text/javascript" src="./vendor.others.js.download"></script>
+    <script type="text/javascript" src="./pgadmin_commons.js.download"></script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/slickgrid" src="./slickgrid.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/codemirror" src="./codemirror.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/browser_nodes" src="./browser_nodes.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/schema_diff" src="./schema_diff.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translations" src="./translations.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.endpoints" src="./endpoints.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.utils" src="./utils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.user_management.current_user" src="./current_user.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.messages" src="./messages.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.server.supported_servers" src="./supported_servers.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/gettext" src="./gettext.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/pgadmin" src="./pgadmin.js.download"></script><link id="wcTheme" rel="stylesheet" type="text/css" href="./webcabin.overrides(2).css"></head>
+<body tabindex="0" class="wcDesktop">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="schema-diff-container">
+    <div id="diff_fetching_data" class="pg-sp-container schema-diff-busy-fetching d-none">
+        <div class="pg-sp-content">
+            <div class="row">
+                <div class="col-12 pg-sp-icon"></div>
+            </div>
+            <div class="row"><div class="col-12 pg-sp-text schema-diff-busy-text"></div></div>
+        </div>
+    </div>
+<div class="wcDocker"><div class="wcDockerTransition"></div><div class="wcLayoutPane" style="height: 290.5px; top: 0px; left: 0px; right: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-close"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="top: 0px; left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content pg-el-container"><div id="schema-diff-header" class="pg-el-container" el="sm"><div class="row pgadmin-control-group">
+      <div class="col-1 control-label">Select Source</div>
+      <div class="col-6 source row"><div class="pgadmin-controls pg-el-sm-4 source_sid">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="source_sid" value="undefined" data-select2-id="1" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="3"></option>
+  
+   
+     
+      
+      <optgroup label="Servers">
+      
+        
+        <option data-image="icon-pg" data-connected="connected" value="1">Postgresql11</option>
+      
+      </optgroup>
+     
+   
+  
+ </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-source_sid-cq-container"><span class="select2-selection__rendered" id="select2-source_sid-cq-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select server...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div><div class="pgadmin-controls pg-el-sm-4 source_did">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="source_did" value="undefined" disabled="" data-select2-id="4" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="6"></option>
+  
+ </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" data-select2-id="5"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true" aria-labelledby="select2-source_did-8p-container"><span class="select2-selection__rendered" id="select2-source_did-8p-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div><div class="pgadmin-controls pg-el-sm-4 source_scid">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="source_scid" value="undefined" disabled="" data-select2-id="7" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="9"></option>
+  
+ </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" data-select2-id="8"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true" aria-labelledby="select2-source_scid-ff-container"><span class="select2-selection__rendered" id="select2-source_scid-ff-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div></div>
+    </div>
+    <div class="row pgadmin-control-group">
+      <div class="col-1 control-label">Select Target</div>
+      <div class="col-6 target row"><div class="pgadmin-controls pg-el-sm-4 target_sid">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="target_sid" value="undefined" data-select2-id="10" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="12"></option>
+  
+   
+     
+      
+      <optgroup label="Servers">
+      
+        
+        <option data-image="icon-pg" data-connected="connected" value="1">Postgresql11</option>
+      
+      </optgroup>
+     
+   
+  
+ </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="11"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-target_sid-3y-container"><span class="select2-selection__rendered" id="select2-target_sid-3y-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Select server...</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div><div class="pgadmin-controls pg-el-sm-4 target_did">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="target_did" value="undefined" disabled="" data-select2-id="13" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="15"></option>
+  
+ </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" data-select2-id="14"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true" aria-labelledby="select2-target_did-hk-container"><span class="select2-selection__rendered" id="select2-target_did-hk-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div><div class="pgadmin-controls pg-el-sm-4 target_scid">
+<div class="pgadmin-controls pg-el-sm-11 pg-el-12">
+ <select class="form-control select2-hidden-accessible" name="target_scid" value="undefined" disabled="" data-select2-id="16" tabindex="-1" aria-hidden="true">
+   <option data-select2-id="18"></option>
+  
+ </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" data-select2-id="17"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true" aria-labelledby="select2-target_scid-pi-container"><span class="select2-selection__rendered" id="select2-target_scid-pi-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ 
+</div></div></div>
+      <div class="col-5 target-buttons">
+          <div class="action-btns d-flex">
+              <button class="btn btn-primary mr-auto"><span class="icon-schema-diff icon-schema-diff-white"></span>&nbsp;Compare</button>
+              <button id="generate-script" class="btn btn-primary-icon mr-1" disabled=""><i class="fa fa-file-code-o sql-icon-lg"></i>&nbsp;Generate Script</button>
+              <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-filter" type="button" class="btn btn-primary-icon" title="" accesskey="" tabindex="0" style="pointer-events: none;">
+                    <i class="fa fa-filter sql-icon-lg" aria-hidden="true"></i>&nbsp;Filter
+                </button>
+                <button id="btn-filter-dropdown" type="button" class="btn btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="" accesskey="" tabindex="0">
+                </button><ul class="dropdown-menu filter">
+<li>
+<a class="dropdown-item" id="btn-identical" href="http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta)#" tabindex="0">
+<i class="identical fa fa-check visibility-hidden" aria-hidden="true"></i>
+<span> Identical </span>
+</a>
+</li>
+<li>
+<a class="dropdown-item" id="btn-differentt" href="http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta)#" tabindex="0">
+<i class="different fa fa-check" aria-hidden="true"></i>
+<span> Different </span>
+</a>
+</li>
+<li>
+<a class="dropdown-item" id="btn-source-only" href="http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta)#" tabindex="0">
+<i class="source-only fa fa-check" aria-hidden="true"></i>
+<span> Source Only </span>
+</a>
+</li>
+<li>
+<a class="dropdown-item" id="btn-target-only" href="http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta)#" tabindex="0">
+<i class="target-only fa fa-check" aria-hidden="true"></i>
+<span> Target Only </span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div><div id="schema-diff-grid" class="pg-el-container" el="sm" style="height: 190.5px;"><div class="obj_properties container-fluid">
+    <div class="pg-panel-message">Select the server, database and schema for the source and target and click <strong>Compare</strong> to compare them.</div></div></div></div></td></tr></tbody></table></div></div></div></div><div class="wcLayoutPane" style="bottom: 0px; height: 284.5px; left: 0px; right: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 982px;"><div class="wcFrameTitle"><a href="http://127.0.0.1:63286/schema_diff/panel/1407886/Schema%20Diff%20(Beta)#" tabindex="-1" class="panel-link-heading">DDL Comparison</a></div><div class="wcTabScroller" style="left: 0px;"></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 0px;"></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-close"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="schema-diff-ddl-comp" class="pg-el-container" el="sm">
+      <div id="ddl_comp_fetching_data" class="pg-sp-container schema-diff-busy-fetching d-none">
+        <div class="pg-sp-content">
+            <div class="row">
+                <div class="col-12 pg-sp-icon"></div>
+            </div>
+            <div class="row"><div class="col-12 pg-sp-text">Comparing objects...</div></div>
+        </div>
+    </div><form class="set-group pg-el-12"><div class="pg-el-sm-12 row accordian-content pg-el-12">
+                  <div class="pg-el-sm-4 ddl-source">Source<div class="pgadmin-control-group form-group row pg-el-12 source_ddl" style="height: 202.5px;">
+<div class="pgadmin-controls pg-el-9 pg-el-12 sql_field_layout ">
+  <textarea class="form-control " name="source_ddl" maxlength="4096" placeholder="" rows="" style="display: none;"></textarea><div class="CodeMirror cm-s-default" style="font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 7px; margin-bottom: -16px; border-right-width: 34px; min-height: 29px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 21px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 29px;"></div><div class="CodeMirror-gutters" style="height: 63px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div></div></div></div>
+  
+</div></div></div>
+                  <div class="pg-el-sm-4 ddl-target">Target<div class="pgadmin-control-group form-group row pg-el-12 target_ddl" style="height: 202.5px;">
+<div class="pgadmin-controls pg-el-9 pg-el-12 sql_field_layout ">
+  <textarea class="form-control " name="target_ddl" maxlength="4096" placeholder="" rows="" style="display: none;"></textarea><div class="CodeMirror cm-s-default" style="font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 7px; margin-bottom: -16px; border-right-width: 34px; min-height: 29px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 21px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 29px;"></div><div class="CodeMirror-gutters" style="height: 63px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div></div></div></div>
+  
+</div></div></div>
+                  <div class="pg-el-sm-4 ddl-diff">Difference
+                  <div class="pgadmin-control-group form-group row pg-el-12 diff_ddl" style="height: 202.5px;"><button class="btn btn-secondary ddl-copy d-none">Copy</button> 
+<div class="pgadmin-controls pg-el-9 pg-el-12 sql_field_layout ">
+  <textarea class="form-control " name="diff_ddl" maxlength="4096" placeholder="" rows="" style="display: none;"></textarea><div class="CodeMirror cm-s-default" style="font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 7px; margin-bottom: -16px; border-right-width: 34px; min-height: 29px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 21px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 29px;"></div><div class="CodeMirror-gutters" style="height: 63px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div></div></div></div>
+  
+</div></div></div>
+              </div>
+      </form></div></div></td></tr></tbody></table></div></div></div></div><div class="wcSplitterBar wcWide wcSplitterBarH" style="top: 287.5px; left: 0px;"><div class="wcSplitterBarLine"></div></div></div></div>
+<script>
+            try {
+  require(
+    ['sources/generated/slickgrid', 'sources/generated/codemirror', 'sources/generated/browser_nodes'],
+    function() {
+      require(['sources/generated/schema_diff'], function(pgSchemaDiffHook) {
+        var pgSchemaDiffHook = pgSchemaDiffHook || pgAdmin.Tools.SchemaDiffHook;
+        pgSchemaDiffHook.load(1407886);
+      }, function() {
+        console.log(arguments);
+      });
+    },
+    function() {
+      console.log(arguments);
+    });
+} catch (err) {
+  console.log(err);
+}
+
+</script>
+
+
+<div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"><p></p><label for="alertify-prompt-0" style="display: none;">HiddenLabel</label><input class="form-control" type="text" id="alertify-prompt-0"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div></body></html>
